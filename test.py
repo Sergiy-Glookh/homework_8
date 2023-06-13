@@ -8,7 +8,7 @@ test_users = [{"name": str((datetime.now() + timedelta(days=i)).day), "birthday"
 # pprint(test_users)
 
 print('users')
-generate_users_birthday_list(users)
+get_birthdays_per_week(users)
 print()
 print('test_users')
-generate_users_birthday_list(test_users, datetime(year=2023, month=6, day=12))
+get_birthdays_per_week(test_users, datetime(year=2023, month=6, day=12))

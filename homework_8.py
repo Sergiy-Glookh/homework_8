@@ -102,7 +102,7 @@ def get_birthday_celebration(birthdate: datetime, current_date=datetime.now()) -
     return birthday_celebration
 
 
-def generate_users_birthday_list(users: list[dict[str, object]], current_date=datetime.now()) -> None:
+def get_birthdays_per_week(users: list[dict[str, object]], current_date=datetime.now()) -> None:
     """ 
     Prints a list of users who have their birthday celebrations in the current week.
 
@@ -144,7 +144,7 @@ def generate_users_birthday_list(users: list[dict[str, object]], current_date=da
 
 if __name__ == '__main__':
 
-    generate_users_birthday_list(generate_users_list(1000))
+    get_birthdays_per_week(generate_users_list(1000))
 
 
     
